@@ -1,0 +1,57 @@
+/* Colors */
+/* upgrade color : #080B12
+main color : #141922
+footer color : #282828
+sidebar color : #000000 */
+
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* COMMON */
+/* Layout */
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    /* debug */
+    background-color: brown;
+}
+/* Upgrade */
+.upgrade {
+    background-color: #080B12;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+/* Side bar */
+.side-bar nav {
+    background-color: #000;
+    height: 100vh;
+    width: 15%;
+    color: white;
+    position: fixed;
+    overflow-y: auto;
+}
+/* Main content */
+.main {
+    height: 100vh;
+    overflow-y: auto;
+}
+/* Song info */
+.song-info {
+    height: 80px;
+    background-color: #282828;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
