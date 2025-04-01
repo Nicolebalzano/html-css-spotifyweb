@@ -14,18 +14,29 @@ sidebar color : #000000 */
 img {
     max-width: 100%;
 }
-
 /* COMMON */
 /* Layout */
+body {
+    font-family: "Montserrat", sans-serif;
+}
 .wrapper {
     width: 100%;
     height: calc(100vh - 80px);
-    /* debug */
-    background-color: brown;
+}
+.flex {
+    display: flex;
+    align-items: center;
 }
 /* Utilities */
 .h-80 {
     height: 80px;
+}
+.margin-left {
+    margin-left: 15px;
+}
+.margin-y {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 /* Upgrade */
 .upgrade {
@@ -36,14 +47,62 @@ img {
     justify-content: right;
     align-items: center;
 }
+.upgrade a {
+    text-decoration: none;
+    color: #dcd4d4;
+}
+.upgrade-btn {
+    border: 1px solid #dcd4d4;
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin-right: 5px;
+    font-weight: bold;
+    cursor: default;
+}
 /* Side bar */
 .side-bar nav {
     background-color: #000;
     height: 100vh;
-    width: 15%;
-    color: white;
+    width: 17%;
     position: fixed;
-    /* overflow-y: auto; */
+}
+.logo-spotify {
+    height: 120px;
+    width: 150px;
+}
+.menu ul {
+    list-style: none;
+    line-height: 35px;
+    color: #f6ededc5;
+}
+.menu {
+    font-size: 1.1rem;
+}
+.menu li i {
+    margin-right: 5px;
+}
+.create-playlist {
+    color: #fff;
+    
+}
+.create-playlist ul li {
+    list-style: none;
+    color: #f6ededc5;
+}
+.create-playlist-title {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.square {
+    display: inline-block;
+    background-color: #928c8c;
+    height: 35px;
+    width: 35px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
 }
 /* Main content */
 .main {
@@ -55,5 +114,5 @@ img {
 .song-info {
     background-color: #282828;
     width: 100%;
-    position: relative;
+    position: fixed;
 }
