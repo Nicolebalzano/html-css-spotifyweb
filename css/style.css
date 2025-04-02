@@ -342,10 +342,19 @@ nav {
     font-size: 0.6rem;
 }
 .line {
-    border-bottom: 2px solid #fff;
+    border-bottom: 4px solid #928c8c;
+    border-radius: 30px;
     width: 400px;
     margin-top: 20px;
     margin-bottom: 5px;
+    position: relative;
+}
+.line-inside {
+    position: absolute;
+    bottom: 1;
+    left: 0;    border-bottom: 4px solid #fff;
+    border-radius: 30px;
+    width: 100px;
 }
 .start-song {
     margin-right: 5px;
