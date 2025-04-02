@@ -14,43 +14,62 @@ sidebar color : #000000 */
 img {
     max-width: 100%;
 }
+
 /* COMMON */
 /* Layout */
 body {
     font-family: "Montserrat", sans-serif;
 }
+
 .wrapper {
     width: 100%;
     height: calc(100vh - 80px);
 }
+
 .flex {
     display: flex;
-    align-items: center;
 }
+
 /* Utilities */
-.h-80 {
-    height: 80px;
+.h-90 {
+    height: 90px;
 }
+
 .margin-left {
-    margin-left: 15px;
+    margin-left: 20px;
 }
+
 .margin-y {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+.line-height {
+    line-height: 40px;
+}
+
+.playlist-title {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
 /* Upgrade */
 .upgrade {
-    background-color: #080B12;
+    background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
-    position: fixed;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: right;
     align-items: center;
 }
+
 .upgrade a {
     text-decoration: none;
     color: #dcd4d4;
 }
+
 .upgrade-btn {
     border: 1px solid #dcd4d4;
     border-radius: 50px;
@@ -59,41 +78,67 @@ body {
     font-weight: bold;
     cursor: default;
 }
+
 /* Side bar */
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
 .side-bar nav {
     background-color: #000;
-    height: 100vh;
-    width: 17%;
+    height: calc(100vh - 80px);
+    width: 220px;
     position: fixed;
+    top: 0;
 }
-.logo-spotify {
-    height: 120px;
-    width: 150px;
-}
-.menu ul {
-    list-style: none;
-    line-height: 35px;
+
+.side-bar a {
+    text-decoration: none;
     color: #f6ededc5;
 }
+
+.logo-spotify {
+    height: 70px;
+    width: 150px;
+}
+
+.menu ul {
+    list-style: none;
+    line-height: 40px;
+    color: #f6ededc5;
+}
+
 .menu {
     font-size: 1.1rem;
 }
+
 .menu li i {
     margin-right: 5px;
 }
+
 .create-playlist {
     color: #fff;
-    
+
 }
+
+.create-playlist h3 {
+    padding-left: 5px;
+}
+
 .create-playlist ul li {
     list-style: none;
     color: #f6ededc5;
 }
+
 .create-playlist-title {
     display: inline-block;
     font-size: 1rem;
     font-weight: 200;
 }
+
 .square {
     display: inline-block;
     background-color: #928c8c;
@@ -103,13 +148,92 @@ body {
     text-align: center;
     font-weight: bold;
     color: #000;
+    margin-left: 5px;
+    margin-bottom: 15px;
 }
+
+.install {
+    display: flex;
+    margin-top: 30px;
+}
+
+.downarrow {
+    display: inline-block;
+    color: #dcd4d4;
+    border: 1px solid #dcd4d4;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    font-size: 0.6rem;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.nav-footer {
+    color: #dcd4d4;
+}
+
+.admin {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #928c8c;
+    margin-top: 10px;
+}
+
+.admin-name {
+    font-weight: bold;
+}
+
+.separator {
+    width: 85%;
+    color: blue;
+}
+
 /* Main content */
 .main {
-    height: 100vh;
     overflow-y: auto;
-    background-color:  #141922;
+    background-color: #141922;
+    height: calc(100vh - 90px - 80px);
+    display: flex;
+    padding-left: 250px;
+    padding-right: 20px;
 }
+
+.main-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: #928c8c;
+    padding-inline-start: 150px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.recently-played {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.col {
+    width: calc((100% - 50px) / 6);
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #fff;
+}
+.card-title {
+  text-align: center;
+}
+.card-subtitle {
+    color: #928c8c;
+    font-size: 0.9rem;
+    padding: 5px 0px;
+}
+
 /* Song info */
 .song-info {
     background-color: #282828;

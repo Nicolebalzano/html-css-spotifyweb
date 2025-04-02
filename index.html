@@ -15,34 +15,45 @@
 <body>
     <section class="wrapper">
         <!-- Upgrade section -->
-        <section class="upgrade h-80">
+        <section class="upgrade h-90">
             <a href="#" class="upgrade-btn">EFFETTUA L'UPGRADE</a>
         </section>
         <!-- /Upgrade section -->
 
         <!-- Side bar section -->
         <section class="side-bar">
-            <nav>
+            <nav >
                 <img src="./img/logo.svg" alt="Logo spotify" class="logo-spotify margin-left">
                 <section class="menu">
                     <ul class="margin-left">
-                        <li><i class="fa-solid fa-house"></i> Home</li>
-                        <li><i class="fa-solid fa-magnifying-glass"></i> Cerca</li>
-                        <li><i class="fa-solid fa-lines-leaning"></i>La tua libreria</li>
+                        <li><i class="fa-solid fa-house"></i><a href="">Home</a> </li>
+                        <li><i class="fa-solid fa-magnifying-glass"></i> <a href="">Cerca</a></li>
+                        <li><i class="fa-solid fa-lines-leaning"></i><a href="">La tua libreria</a></li>
                     </ul>
                 </section>
-                <section class="create-playlist">
-                    <h3 class="margin-y margin-left">Playlist</h3>
-                    <ul>
-                        <li class="flex"><span class="square margin-left">&plus;</span><h5 class="margin-left create-playlist-title">Crea Playlist</h5></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                <section class="create-playlist margin-left">
+                    <h3 class="margin-y">PLAYLIST</h3>
+                    <ul class="line-height">
+                        <li class="flex"><button class="square margin-left">&plus;</button><h5 class="margin-left create-playlist-title">Crea Playlist</h5></li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
                     </ul>
+                    <div class="nav-footer">
+                        <div class="install">
+                        <span class="downarrow">&DownArrow;</span>
+                        <span>Installa app</span>
+                    </div>
+                    <hr class="separator">
+                    <div class="nav-footer">
+                        <i class="fa-regular fa-user admin"></i>
+                        <span class="admin-name">Jhon Doe</span>
+                    </div>
+                    </div>
                 </section>
             </nav>
         </section>
@@ -50,13 +61,73 @@
 
         <!-- Main section -->
         <section class="main">
+          <div class="main-content">
+<nav class="main-menu">
+    <ul>
+    <li>IN EVIDENZA</li>
+    <li >PODCAST</li>
+    <li>CLASSIFICHE</li>
+    <li>GENERI E MOOD</li>
+    <li>NUOVE USCITE</li>
+    <li>SCOPRI</li>
+    </ul>
+</nav>
+    <h2 class="playlist-title">Recently played</h2>
+    <div class="recently-played">
 
+        <!-- Card -->
+    <div class="col">
+        <div class="card">
+<img src="./img/metal_lifting.jpg" alt="">
+<h3 class="card-title">Heavy metal</h3><br>
+<span class="card-subtitle">subtitle</span>
+</div>
+    </div>
+    <!-- /Card -->
+
+    <div class="col">
+        <div class="card">
+        <img src="./img/stranger.jpeg" alt="">
+            <h3 class="card-title">Stranger things, Vol. 1 (A Netflix Original Series Soundtrack)</h3><br>
+            <span class="card-subtitle">Kyle Dixon & Michael Stein</span>
+            </div>
+    </div>
+    <div>
+        <img src="./img/aquietplace.jpeg" alt="">
+        <div class="card">
+            <h3 class="card-title">A quiet place</h3><br>
+            <span class="card-subtitle">subtitle</span>
+            </div>
+    </div>
+    <div class="col">
+        <img src="./img/split.jpeg" alt="">
+        <div class="card">
+            <h3 class="card-title">Split</h3><br>
+            <span class="card-subtitle">subtitle</span>
+            </div>
+    </div>
+    <div class="col">
+        <img src="./img/cure.jpeg" alt="">
+        <div class="card">
+            <h3 class="card-title">A cure for wellness</h3><br>
+            <span class="card-subtitle">subtitle</span>
+            </div>
+    </div>
+    <div class="col">
+        <img src="./img/sinister.jpeg" alt="">
+        <div class="card">
+            <h3 class="card-title">Sinister</h3><br>
+            <span class="card-subtitle">subtitle</span>
+            </div>
+    </div>
+ </div>
+ </div>
         </section>
         <!-- /Main section -->
     </section>
 
     <!-- Song-info section -->
-    <section class="song-info h-80">
+    <section class="song-info h-90">
     </section>
     <!-- /Song-info section -->
 </body>
