@@ -3,7 +3,9 @@
 main color : #141922
 footer color : #282828
 sidebar color : #000000 */
-
+:root {
+    scroll-behavior: smooth;
+}
 /* RESET */
 * {
     padding: 0;
@@ -319,4 +321,39 @@ nav {
     gap: 5px;
     color: #928c8c; 
     padding-left: 10px;
+}
+.center {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+.icones-center {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+.line-section {
+    display: flex;
+    align-items: flex-end;
+}
+.time-line {
+    font-size: 0.6rem;
+}
+.line {
+    border-bottom: 2px solid #fff;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.start-song {
+    margin-right: 5px;
+}
+.end-song{
+    margin-left: 5px;
+}
+.hover-bigger:hover {
+    transition: width 0.3s ease, height 0.3s ease; 
+    transform: scale(1.1);
 }
