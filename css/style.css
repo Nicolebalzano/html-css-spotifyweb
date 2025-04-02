@@ -227,11 +227,13 @@ nav {
 }
 .card-title {
   text-align: center;
+  width: 100%;
+  margin-top: 10px;
 }
 .card-subtitle {
     color: #928c8c;
     font-size: 0.9rem;
-    padding: 5px 0px;
+    padding: 5px;
 }
 
 /* Song info */
