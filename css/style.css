@@ -74,11 +74,18 @@ body {
     border: 1px solid #dcd4d4;
     border-radius: 50px;
     padding: 10px 30px;
-    margin-right: 5px;
+    margin-right: 20px;
     font-weight: bold;
     cursor: default;
 }
-
+.upgrade-btn:hover {
+    transition: width 0.3s ease, height 0.3s ease; 
+    transform: scale(1.1);
+}
+.light:hover {
+    color: #fff;
+    opacity: 0.5;
+}
 /* Side bar */
 nav {
     padding: 10px;
@@ -200,14 +207,17 @@ nav {
 .main-menu ul {
     list-style: none;
     display: flex;
-    flex-direction: row;
     color: #928c8c;
+    flex-direction: row;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 30px;
     gap: 10px;
 }
-
+.main-menu ul li a {
+    text-decoration: none;
+    color: #928c8c;
+}
 .recently-played {
     display: flex;
     justify-content: flex-end;
