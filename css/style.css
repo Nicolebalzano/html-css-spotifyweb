@@ -56,13 +56,14 @@ body {
 
 /* Upgrade */
 .upgrade {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color:rgba(0, 0, 0, 0.6);
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     display: flex;
     justify-content: right;
     align-items: center;
+    z-index: 1;
 }
 
 .upgrade a {
@@ -86,9 +87,13 @@ body {
     color: #fff;
     opacity: 0.5;
 }
+.border-bottom{
+    border-bottom: 1px solid #f0f014;
+}
 /* Side bar */
 nav {
     padding: 10px;
+    z-index: 2;
 }
 
 .side-bar nav {
@@ -97,6 +102,9 @@ nav {
     width: 220px;
     position: fixed;
     top: 0;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 }
 
 .side-bar a {
@@ -178,13 +186,14 @@ nav {
 }
 
 .admin {
-    border: 1px solid #fff;
+    border: 2px solid #928c8c;
+    padding: 7px;
     border-radius: 50%;
-    padding: 8px;
-    background-color: #928c8c;
-    margin-top: 10px;
 }
-
+.fa-regular {
+    background-color: #928c8c;
+    margin-top: 5px;
+}
 .admin-name {
     font-weight: bold;
 }
@@ -200,10 +209,14 @@ nav {
     background-color: #141922;
     height: calc(100vh - 90px - 80px);
     display: flex;
+    height: 100vh;
     padding-left: 250px;
     padding-right: 20px;
 }
-
+.main-content {
+    position: relative;
+    top: 100px;
+}
 .main-menu ul {
     list-style: none;
     display: flex;
