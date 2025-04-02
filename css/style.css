@@ -81,9 +81,6 @@ body {
 
 /* Side bar */
 nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     padding: 10px;
 }
 
@@ -205,7 +202,7 @@ nav {
     display: flex;
     flex-direction: row;
     color: #928c8c;
-    padding-inline-start: 150px;
+    justify-content: center;
     margin-top: 10px;
     margin-bottom: 30px;
     gap: 10px;
@@ -230,10 +227,29 @@ nav {
   width: 100%;
   margin-top: 10px;
 }
+.for-you-title {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-top: 40px;
+}
 .card-subtitle {
     color: #928c8c;
     font-size: 0.9rem;
     padding: 5px;
+}
+.subtitle {
+    color: #928c8c;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.created-for-you {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.col-2 {
+    width: calc((100% - 10px) / 6);
 }
 
 /* Song info */
