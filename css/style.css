@@ -53,7 +53,12 @@ body {
     margin-bottom: 15px;
     font-size: 1.6rem;
 }
-
+.round-image {
+    border-radius: 50%;
+}
+.margin-10 {
+    margin: 7px;
+}
 /* Upgrade */
 .upgrade {
     background-color:rgba(0, 0, 0, 0.6);
@@ -64,6 +69,7 @@ body {
     justify-content: right;
     align-items: center;
     z-index: 1;
+    padding-right: 20px;
 }
 
 .upgrade a {
@@ -179,10 +185,12 @@ nav {
     font-size: 0.6rem;
     text-align: center;
     margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 .nav-footer {
     color: #dcd4d4;
+    padding-left: 10px;
 }
 
 .admin {
@@ -190,9 +198,10 @@ nav {
     padding: 7px;
     border-radius: 50%;
 }
-.fa-regular {
+.fa-user {
     background-color: #928c8c;
     margin-top: 5px;
+    margin-top: 10px;
 }
 .admin-name {
     font-weight: bold;
@@ -280,4 +289,34 @@ nav {
     background-color: #282828;
     width: 100%;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+}
+.small-sinister {
+    width: 40px;
+    object-fit: contain;
+}
+.song-name {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.song-name h4 {
+    color: #fff;
+    font-size: 0.9rem;
+}
+.song-name span {
+    color: #928c8c;
+    font-size: 0.6rem;
+}
+.icones-left {
+    display: flex;
+    gap: 5px;
+    color: #928c8c; 
+    padding-left: 10px;
 }
