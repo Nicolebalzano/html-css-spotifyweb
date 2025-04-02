@@ -6,6 +6,7 @@ sidebar color : #000000 */
 :root {
     scroll-behavior: smooth;
 }
+
 /* RESET */
 * {
     padding: 0;
@@ -55,15 +56,18 @@ body {
     margin-bottom: 15px;
     font-size: 1.6rem;
 }
+
 .round-image {
     border-radius: 50%;
 }
+
 .margin-10 {
     margin: 7px;
 }
+
 /* Upgrade */
 .upgrade {
-    background-color:rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     position: fixed;
     top: 0;
@@ -87,17 +91,21 @@ body {
     font-weight: bold;
     cursor: default;
 }
+
 .upgrade-btn:hover {
-    transition: width 0.3s ease, height 0.3s ease; 
+    transition: width 0.3s ease, height 0.3s ease;
     transform: scale(1.1);
 }
+
 .light:hover {
     color: #fff;
     opacity: 0.5;
 }
-.border-bottom{
+
+.border-bottom {
     border-bottom: 1px solid #f0f014;
 }
+
 /* Side bar */
 nav {
     padding: 10px;
@@ -200,11 +208,13 @@ nav {
     padding: 7px;
     border-radius: 50%;
 }
+
 .fa-user {
     background-color: #928c8c;
     margin-top: 5px;
     margin-top: 10px;
 }
+
 .admin-name {
     font-weight: bold;
 }
@@ -220,14 +230,16 @@ nav {
     background-color: #141922;
     height: calc(100vh - 90px - 80px);
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 80px);
     padding-left: 250px;
     padding-right: 20px;
 }
+
 .main-content {
     position: relative;
     top: 100px;
 }
+
 .main-menu ul {
     list-style: none;
     display: flex;
@@ -238,18 +250,22 @@ nav {
     margin-bottom: 30px;
     gap: 10px;
 }
+
 .main-menu ul li a {
     text-decoration: none;
     color: #928c8c;
 }
+
 .recently-played {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
 }
+
 .col {
     width: calc((100% - 50px) / 6);
 }
+
 .card {
     display: flex;
     flex-wrap: wrap;
@@ -257,31 +273,36 @@ nav {
     color: #fff;
 }
 .card-title {
-  text-align: center;
-  width: 100%;
-  margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
 }
+
 .for-you-title {
     color: #fff;
     font-size: 1.6rem;
     margin-top: 40px;
 }
+
 .card-subtitle {
     color: #928c8c;
     font-size: 0.9rem;
     padding: 5px;
 }
+
 .subtitle {
     color: #928c8c;
     font-size: 0.9rem;
     margin-bottom: 30px;
     margin-top: 5px;
 }
+
 .created-for-you {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
 }
+
 .col-2 {
     width: calc((100% - 10px) / 6);
 }
@@ -294,53 +315,64 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+
 .left {
     display: flex;
     padding-left: 15px;
     align-items: center;
 }
+
 .small-sinister {
     width: 40px;
     object-fit: contain;
 }
+
 .song-name {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
 }
+
 .song-name h4 {
     color: #fff;
     font-size: 0.9rem;
 }
+
 .song-name span {
     color: #928c8c;
     font-size: 0.6rem;
 }
+
 .icones-left {
     display: flex;
     gap: 5px;
-    color: #928c8c; 
+    color: #928c8c;
     padding-left: 10px;
 }
+
 .center {
     display: flex;
     flex-grow: 1;
     align-items: flex-start;
     justify-content: center;
-    
+
 }
+
 .icones-center {
     color: #fff;
     font-size: 25px;
     text-align: center;
 }
+
 .line-section {
     display: flex;
     align-items: flex-end;
 }
+
 .time-line {
     font-size: 0.6rem;
 }
+
 .line {
     border-bottom: 4px solid #928c8c;
     border-radius: 30px;
@@ -349,31 +381,39 @@ nav {
     margin-bottom: 5px;
     position: relative;
 }
+
 .line-inside {
     position: absolute;
     bottom: 1;
-    left: 0;    border-bottom: 4px solid #fff;
+    left: 0;
+    border-bottom: 4px solid #fff;
     border-radius: 30px;
     width: 100px;
 }
+
 .start-song {
     margin-right: 5px;
 }
-.end-song{
+
+.end-song {
     margin-left: 5px;
 }
+
 .hover-bigger:hover {
-    transition: width 0.3s ease, height 0.3s ease; 
+    transition: width 0.3s ease, height 0.3s ease;
     transform: scale(1.1);
 }
+
 .right {
     display: flex;
     align-items: center;
     margin-right: 15px;
 }
+
 .icons-right {
     color: #fff;
 }
+
 .line-right {
     border-bottom: 4px solid #928c8c;
     border-radius: 30px;
@@ -384,11 +424,12 @@ nav {
     margin-bottom: 23px;
     margin-left: 5px;
 }
+
 .line-inside-right {
     position: absolute;
     bottom: 1;
-    left: 0;   
-     border-bottom: 4px solid #fff;
+    left: 0;
+    border-bottom: 4px solid #fff;
     border-radius: 30px;
     width: 25px;
 }
