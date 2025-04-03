@@ -134,7 +134,10 @@ body {
     width: 150px;
     margin-bottom: 10px;
 }
-
+.logo-small {
+    height: 30px;
+    display: none;
+}
 .menu ul {
     list-style: none;
     line-height: 40px;
@@ -151,6 +154,8 @@ body {
 .create-playlist {
     color: #fff;
     font-size: 0.9rem;
+    overflow: auto;
+    height: calc(100vh - 200px);
 }
 
 .create-playlist h3 {
@@ -158,11 +163,10 @@ body {
     font-size: 0.9rem;
 }
 
-.create-playlist ul li {
+.create-playlist li {
     list-style: none;
     color: #f6ededc5;
 }
-
 .create-playlist-title {
     display: inline-block;
     font-weight: 200;
@@ -225,10 +229,6 @@ body {
 
 .separator {
     width: 85%;
-    color: blue;
-}
-.nav-footer {
-    
 }
 /* Main content */
 .main {

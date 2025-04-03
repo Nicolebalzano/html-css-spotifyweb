@@ -15,16 +15,73 @@
 }
 @media screen and (max-width: 557px) {
    .side-bar nav{
-      width: 180px;
+      width:40px;
+      padding-left: 0;
      } 
+     .menu {
+      padding-left: 0px;
+     }
+     .main {
+      padding-left: 70px;
+     }
+     .logo-spotify {
+      display: none;
+     }
+     .nav-footer {
+      margin-top: 130px;
+     }
+     .logo-small {
+      display: block;
+      width: 20px;
+      margin-left: 7px;
+     }
+     .create-playlist {
+      display: none;
+     }
+     ul.marginleft {
+      margin-left: 0;
+     }
+     .separator {
+      display: none;
+     }
+     .side-bar a {
+      display: none;
+     }
      .logo-spotify {
       width: 60%;
+     }
+     .admin-name {
+      display: none;
+     }
+     .fa-user {
+      padding: 2px;
+      font-size: 12px;
+     }
+     .install-now {
+      display: none;
+      align-items: center;
+      justify-content: center;
+     }
+     ul.margin-left {
+      margin-left: 15px;
      }
      .col {
       width: calc((100% - 10px) / 2);
      }
      .col-2 {
-      width: 40%;
+      width: 50%;
      }
-   
+   }
+   @media screen and (max-width: 580px) {
+      div.right {
+         display: none;
+      }
+      div.center {
+         width: calc(100% - 100px);
+      }
+}
+@media screen and (max-width: 660px) {
+   .icones-left {
+      display: none;
+   }
 }
