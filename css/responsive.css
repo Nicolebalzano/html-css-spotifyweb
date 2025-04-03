@@ -9,5 +9,22 @@
    .col {
     width: calc((100% - 30px) / 4);
    }
-
+   .upgrade {
+      font-size: 0.7rem;
+   }
+}
+@media screen and (max-width: 557px) {
+   .side-bar nav{
+      width: 180px;
+     } 
+     .logo-spotify {
+      width: 60%;
+     }
+     .col {
+      width: calc((100% - 10px) / 2);
+     }
+     .col-2 {
+      width: 40%;
+     }
+   
 }

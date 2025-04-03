@@ -277,6 +277,7 @@ body {
     width: calc((100% - 50px) / 6);
 }
 
+
 .card {
     display: flex;
     flex-wrap: wrap;
@@ -333,7 +334,7 @@ body {
 }
 
 .col-2 {
-    width: calc((100% - 10px) / 6);
+    width: 20%;
 }
 
 /* Song info */
