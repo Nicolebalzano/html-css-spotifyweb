@@ -1,0 +1,13 @@
+@media screen and (max-width: 787px) {
+   .side-bar nav {
+    width: 190px;
+    font-size: 0.8rem;
+   } 
+   .logo-spotify {
+    width: 70%;
+   }
+   .col {
+    width: calc((100% - 30px) / 4);
+   }
+
+}

@@ -32,6 +32,9 @@ body {
 .flex {
     display: flex;
 }
+.top {
+    height: 100vh;
+}
 
 /* Utilities */
 .h-90 {
@@ -64,7 +67,6 @@ body {
 .margin-10 {
     margin: 7px;
 }
-
 /* Upgrade */
 .upgrade {
     background-color: rgba(0, 0, 0, 0.6);
@@ -76,6 +78,7 @@ body {
     align-items: center;
     z-index: 1;
     padding-right: 20px;
+    font-size: 0.9rem;
 }
 
 .upgrade a {
@@ -107,20 +110,18 @@ body {
 }
 
 /* Side bar */
-nav {
-    padding: 10px;
-    z-index: 2;
-}
-
 .side-bar nav {
     background-color: #000;
     height: calc(100vh - 80px);
     width: 220px;
+    padding: 10px;
+    z-index: 2;
     position: fixed;
     top: 0;
-    justify-content: space-between;
     display: flex;
     flex-direction: column;
+    font-size: 1rem;
+    line-height: 10px;
 }
 
 .side-bar a {
@@ -129,8 +130,9 @@ nav {
 }
 
 .logo-spotify {
-    height: 70px;
+    height: 50px;
     width: 150px;
+    margin-bottom: 10px;
 }
 
 .menu ul {
@@ -140,20 +142,20 @@ nav {
 }
 
 .menu {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
-
 .menu li i {
     margin-right: 5px;
 }
 
 .create-playlist {
     color: #fff;
-
+    font-size: 0.9rem;
 }
 
 .create-playlist h3 {
     padding-left: 5px;
+    font-size: 0.9rem;
 }
 
 .create-playlist ul li {
@@ -163,8 +165,9 @@ nav {
 
 .create-playlist-title {
     display: inline-block;
-    font-size: 1rem;
     font-weight: 200;
+    font-size: 0.9rem;
+    margin-left: 5px;
 }
 
 .square {
@@ -172,7 +175,7 @@ nav {
     background-color: #928c8c;
     height: 35px;
     width: 35px;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     font-weight: bold;
     color: #000;
@@ -192,7 +195,7 @@ nav {
     border-radius: 50%;
     height: 15px;
     width: 15px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     text-align: center;
     margin-right: 5px;
     margin-bottom: 10px;
@@ -201,6 +204,7 @@ nav {
 .nav-footer {
     color: #dcd4d4;
     padding-left: 10px;
+    font-size: 0.9rem;
 }
 
 .admin {
@@ -223,13 +227,16 @@ nav {
     width: 85%;
     color: blue;
 }
-
+.nav-footer {
+    
+}
 /* Main content */
 .main {
     overflow-y: auto;
     background-color: #141922;
     height: calc(100vh - 90px - 80px);
     display: flex;
+    flex-wrap: wrap;
     height: calc(100vh - 80px);
     padding-left: 250px;
     padding-right: 20px;
@@ -243,12 +250,16 @@ nav {
 .main-menu ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
     color: #928c8c;
     flex-direction: row;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 30px;
     gap: 10px;
+    font-size: 0.8rem;
 }
 
 .main-menu ul li a {
@@ -258,7 +269,7 @@ nav {
 
 .recently-played {
     display: flex;
-    justify-content: flex-end;
+   flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -271,16 +282,34 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     color: #fff;
+    position: relative;
 }
+.card-image {
+    position: relative;
+}
+.play-hover {
+    position: absolute;
+    top:25% ; 
+    left: 40%;  
+    font-size: 2rem;
+    display: none;
+}
+.card:hover .play-hover {
+    display: block;
+}
+
 .card-title {
     text-align: center;
     width: 100%;
     margin-top: 10px;
+    font-size: 0.9rem;
 }
-
+.playlist-title {
+    font-size: 1.5rem;
+}
 .for-you-title {
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-top: 40px;
 }
 
@@ -320,11 +349,11 @@ nav {
     display: flex;
     padding-left: 15px;
     align-items: center;
+    width: 150px;
 }
 
 .small-sinister {
     width: 40px;
-    object-fit: contain;
 }
 
 .song-name {
@@ -351,11 +380,10 @@ nav {
 }
 
 .center {
-    display: flex;
-    flex-grow: 1;
-    align-items: flex-start;
     justify-content: center;
-
+    display: flex;
+    flex-wrap: nowrap;
+   width: 40%;
 }
 
 .icones-center {
@@ -376,7 +404,7 @@ nav {
 .line {
     border-bottom: 4px solid #928c8c;
     border-radius: 30px;
-    width: 400px;
+    width: 200px;
     margin-top: 20px;
     margin-bottom: 5px;
     position: relative;
@@ -388,7 +416,7 @@ nav {
     left: 0;
     border-bottom: 4px solid #fff;
     border-radius: 30px;
-    width: 100px;
+    width: 50px;
 }
 
 .start-song {
@@ -408,16 +436,19 @@ nav {
     display: flex;
     align-items: center;
     margin-right: 15px;
+    width: 150px;
 }
 
 .icons-right {
     color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .line-right {
     border-bottom: 4px solid #928c8c;
     border-radius: 30px;
-    width: 150px;
+    width: 100px;
     margin-top: 20px;
     margin-bottom: 5px;
     position: relative;
@@ -431,5 +462,5 @@ nav {
     left: 0;
     border-bottom: 4px solid #fff;
     border-radius: 30px;
-    width: 25px;
+    width: 20px;
 }
