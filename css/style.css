@@ -275,6 +275,7 @@ body {
 
 .col {
     width: calc((100% - 50px) / 6);
+    position: relative;
 }
 
 
@@ -283,10 +284,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     color: #fff;
-    position: relative;
-}
-.card-image {
-    position: relative;
 }
 .play-hover {
     position: absolute;
@@ -295,8 +292,9 @@ body {
     font-size: 2rem;
     display: none;
 }
-.card:hover .play-hover {
+.col:hover .play-hover {
     display: block;
+    color: #fff;
 }
 
 .card-title {
@@ -331,10 +329,6 @@ body {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
-}
-
-.col-2 {
-    width: 20%;
 }
 
 /* Song info */

@@ -17,6 +17,7 @@
    .side-bar nav{
       width:40px;
       padding-left: 0;
+      align-items: center;
      } 
      .menu {
       padding-left: 0px;
@@ -67,9 +68,6 @@
      }
      .col {
       width: calc((100% - 10px) / 2);
-     }
-     .col-2 {
-      width: 50%;
      }
    }
    @media screen and (max-width: 580px) {
