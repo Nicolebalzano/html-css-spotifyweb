@@ -291,6 +291,17 @@ body {
     left: 40%;  
     font-size: 2rem;
     display: none;
+    z-index: 1;
+}
+.background-hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    display: none;
+}
+.col:hover .background-hover {
+    display: block;
 }
 .col:hover .play-hover {
     display: block;
@@ -407,11 +418,18 @@ body {
 
 .line-inside {
     position: absolute;
-    bottom: 1;
-    left: 0;
     border-bottom: 4px solid #fff;
     border-radius: 30px;
     width: 50px;
+}
+.dot {
+    position: absolute;
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    left: 45px;
 }
 .line:hover .line-inside {
     border:2.5px solid  #008000;
