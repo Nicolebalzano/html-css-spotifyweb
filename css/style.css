@@ -108,7 +108,6 @@ body {
 .border-bottom {
     border-bottom: 1px solid #f0f014;
 }
-
 /* Side bar */
 .side-bar nav {
     background-color: #000;
@@ -401,6 +400,7 @@ body {
 .line-section {
     display: flex;
     align-items: flex-end;
+    position: relative;
 }
 
 .time-line {
@@ -413,7 +413,6 @@ body {
     width: 200px;
     margin-top: 20px;
     margin-bottom: 5px;
-    position: relative;
 }
 
 .line-inside {
@@ -421,6 +420,8 @@ body {
     border-bottom: 4px solid #fff;
     border-radius: 30px;
     width: 50px;
+    top: 20px;
+    left: 25px;
 }
 .dot {
     position: absolute;
@@ -429,9 +430,16 @@ body {
     width: 10px;
     border: 1px solid #fff;
     border-radius: 50%;
-    left: 45px;
+    left: 50px;
+    left: 75px;
+    bottom: 1.5px;
+    z-index: 1;
+    display: none;
 }
-.line:hover .line-inside {
+.line-section:hover .dot {
+    display: block;
+}
+.line-section:hover .line-inside {
     border:2.5px solid  #008000;
 }
 .start-song {
