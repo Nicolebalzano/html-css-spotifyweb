@@ -413,7 +413,9 @@ body {
     border-radius: 30px;
     width: 50px;
 }
-
+.line:hover .line-inside {
+    border:2.5px solid  #008000;
+}
 .start-song {
     margin-right: 5px;
 }
